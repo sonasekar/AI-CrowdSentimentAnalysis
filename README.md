@@ -14,3 +14,6 @@ This project uses **TextBlob** for sentiment analysis and **Logistic Regression*
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/AI-ProtestAnalysis.git
+
+ ## output
+![Screenshot (10)](https://github.com/user-attachments/assets/098a27af-a143-4d06-9c8d-6502b79d0aa3)
