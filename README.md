@@ -117,7 +117,7 @@ we can add any other protest videos
 
 ---
 
-## 🧠 Built With ❤️ by Team 
+## 🧠 Built by 
 
 - Sona S
 - Vaishnavi S
