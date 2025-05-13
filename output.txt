@@ -1,0 +1,184 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS D:\254045\AI-ProtestAnalysis> pip install pandas scikit-learn textblob nltk
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pandas
+  Downloading pandas-2.2.3-cp312-cp312-win_amd64.whl.metadata (19 kB)
+Collecting scikit-learn
+  Downloading scikit_learn-1.6.1-cp312-cp312-win_amd64.whl.metadata (15 kB)
+Collecting textblob
+  Downloading textblob-0.19.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting nltk
+  Downloading nltk-3.9.1-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: numpy>=1.26.0 in c:\users\student\appdata\roaming\python\python312\site-packages (from pandas) (2.1.0)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.15.3-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Collecting joblib>=1.2.0 (from scikit-learn)
+  Downloading joblib-1.5.0-py3-none-any.whl.metadata (5.6 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: click in c:\users\student\appdata\roaming\python\python312\site-packages (from nltk) (8.1.8)
+Collecting regex>=2021.8.3 (from nltk)
+  Downloading regex-2024.11.6-cp312-cp312-win_amd64.whl.metadata (41 kB)
+Collecting tqdm (from nltk)
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Requirement already satisfied: colorama in c:\users\student\appdata\roaming\python\python312\site-packages (from click->nltk) (0.4.6)
+Downloading pandas-2.2.3-cp312-cp312-win_amd64.whl (11.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.5/11.5 MB 15.0 MB/s eta 0:00:00
+Downloading scikit_learn-1.6.1-cp312-cp312-win_amd64.whl (11.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 11.6 MB/s eta 0:00:00
+Downloading textblob-0.19.0-py3-none-any.whl (624 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 624.3/624.3 kB 5.8 MB/s eta 0:00:00
+Downloading nltk-3.9.1-py3-none-any.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 6.1 MB/s eta 0:00:00
+Downloading joblib-1.5.0-py3-none-any.whl (307 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Downloading regex-2024.11.6-cp312-cp312-win_amd64.whl (273 kB)
+Downloading scipy-1.15.3-cp312-cp312-win_amd64.whl (41.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.0/41.0 MB 3.3 MB/s eta 0:00:00
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+  WARNING: The script tqdm.exe is installed in 'C:\Users\student\AppData\Roaming\Python\Python312\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script nltk.exe is installed in 'C:\Users\student\AppData\Roaming\Python\Python312\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed joblib-1.5.0 nltk-3.9.1 pandas-2.2.3 python-dateutil-2.9.0.post0 pytz-2025.2 regex-2024.11.6 scikit-learn-1.6.1 scipy-1.15.3 six-1.17.0 textblob-0.19.0 threadpoolctl-3.6.0 tqdm-4.67.1 tzdata-2025.2
+
+[notice] A new release of pip is available: 24.2 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+PS D:\254045\AI-ProtestAnalysis>
+PS D:\254045\AI-ProtestAnalysis> python sentiment_analysis.py
+>>
+Traceback (most recent call last):
+  File "D:\254045\AI-ProtestAnalysis\sentiment_analysis.py", line 9, in <module>
+    df = pd.read_csv("protest_tweets.csv")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'protest_tweets.csv'
+PS D:\254045\AI-ProtestAnalysis> python sentiment_analysis.py
+>>
+D:\254045\AI-ProtestAnalysis\sentiment_analysis.py:9: SyntaxWarning: invalid escape sequence '\p'
+  df = pd.read_csv("D:\254045\protest_tweets.csv")
+Traceback (most recent call last):
+  File "D:\254045\AI-ProtestAnalysis\sentiment_analysis.py", line 9, in <module>
+    df = pd.read_csv("D:\254045\protest_tweets.csv")
+D:\254045\AI-ProtestAnalysis\sentiment_analysis.py:1: SyntaxWarning: invalid escape sequence '\p'
+  import pandas as pd
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:¬045\\protest_tweets.csv'
+PS D:\254045\AI-ProtestAnalysis> python sentiment_analysis.py
+>>
+D:\254045\AI-ProtestAnalysis\sentiment_analysis.py:9: SyntaxWarning: invalid escape sequence '\p'
+  df = pd.read_csv("D:\protest_tweets.csv")
+C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+              precision    recall  f1-score   support
+
+     Neutral       0.50      1.00      0.67         1
+    Positive       0.00      0.00      0.00         1
+
+    accuracy                           0.50         2
+   macro avg       0.25      0.50      0.33         2
+weighted avg       0.25      0.50      0.33         2
+
+New sentence sentiment: Neutral
+PS D:\254045\AI-ProtestAnalysis> python sentiment_analysis.py
+>>
+C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being s  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+     Neutral       0.50      1.00      0.67         1
+    Positive       0.00      0.00      0.00         1
+
+    accuracy                           0.50         2
+   macro avg       0.25      0.50      0.33         2
+weighted avg       0.25      0.50      0.33         2
+
+New sentence sentiment: Neutral
+PS D:\254045\AI-ProtestAnalysis> git init
+Initialized empty Git repository in D:/254045/AI-ProtestAnalysis/.git/
+PS D:\254045\AI-ProtestAnalysis> git add .
+PS D:\254045\AI-ProtestAnalysis> git commit -m "Initial commit for sentiment analysis of protest data"
+Author identity unknown
+Run
+
+  git config --global user.email "you@example.com"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'student@RV-ML5-.(none)')
+PS D:\254045\AI-ProtestAnalysis>  git config --global user.email "sonaskh001@gmail.com"
+PS D:\254045\AI-ProtestAnalysis>  git config --global user.name  "sonasekar"
+[master (root-commit) c994f1b] Initial commit for sentiment analysis of protest data
+ 1 file changed, 46 insertions(+)
+ create mode 100644 sentiment_analysis.py
+PS D:\254045\AI-ProtestAnalysis> git remote add origin <your-repo-url>
+At line:1 char:23
++ git remote add origin <your-repo-url>
++                       ~
+    + FullyQualifiedErrorId : RedirectionNotSupported
+ 
+PS D:\254045\AI-ProtestAnalysis> git remote add origin <your-repo-url>
+At line:1 char:23
++ git remote add origin <your-repo-url>
++                       ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+ 
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 838 bytes | 838.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sonasekar/AI-CrowdSentimentAnalysis.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
