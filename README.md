@@ -1,21 +1,137 @@
 # AI-Based Crowd Sentiment Analysis for Protests & Gatherings
 
-This project uses **TextBlob** for sentiment analysis and **Logistic Regression** for classifying protest statements into **Positive**, **Negative**, or **Neutral** categories. The model is trained using a small dataset of protest-related tweets and performs sentiment analysis on text data.
+> *Empowering Civic Safety Through Emotion-Aware Intelligence*
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Dataset](#dataset)
-- [Model Evaluation](#model-evaluation)
-- [License](#license)
+---
 
-## Installation
+## 🚨 Problem Statement
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/AI-ProtestAnalysis.git
+Governments and organizations often struggle to understand crowd sentiment in real-time during protests, public events, or large gatherings. This lack of insight can delay response times and escalate conflicts.
 
- ## output
-![Screenshot (10)](https://github.com/user-attachments/assets/098a27af-a143-4d06-9c8d-6502b79d0aa3)
-![Screenshot (11)](https://github.com/user-attachments/assets/bdab5994-11ac-44c2-bc19-3293610f064d)
-![Screenshot (12)](https://github.com/user-attachments/assets/3ab419e5-b370-45a4-be27-1166cd53ebbb)
+---
+
+## 💡 Proposed Solution
+
+This system uses **AI-powered video analysis** to detect emotional states in crowds, helping authorities and event organizers make informed, timely decisions.
+
+### 📌 Phase Implementation:
+- **Phase 1**: Social media or stored video sentiment analysis using NLP and facial emotion recognition.
+- **Phase 2**: Live video feed analysis, with real-time heatmaps and agitation detection.
+
+---
+
+## ✅ Key Features
+
+- Real-time emotion detection from crowd footage  
+- Heatmap generation showing zones of agitation or peace  
+- Integration with social media videos for crowd sentiment mining  
+- Predictive riot risk analysis using emotion trends
+
+---
+
+## 🛠 Tech Stack
+
+| Layer               | Technology                 |
+|--------------------|----------------------------|
+| Video Analysis      | OpenCV, DeepFace           |
+| Emotion Detection   | AffectNet, TensorFlow      |
+| NLP Sentiment       | TextBlob, Scikit-learn     |
+| Visualization       | Matplotlib, Seaborn        |
+| Backend Scripting   | Python                     |
+
+---
+
+---
+
+## 🔁 Work Flow 
+
+1. Input video (live or uploaded)
+2. Face detection and emotion recognition using DeepFace
+3. Sentiment aggregation
+4. Heatmap and emotional intensity chart generation
+5. Report and visualization output
+
+---
+
+## 🎯 Usefulness & Scalability
+
+### Usefulness:
+- Real-time crowd mood monitoring
+- Preventive control in large gatherings
+- Helpful for public safety teams and event organizers
+
+### Scalability:
+- Compatible with multiple live feeds
+- Can work with different cities/regions
+- Easily integrates with surveillance & social media
+
+---
+
+## 📥 Input Example
+
+Video file placed inside the `data/` folder:
+
+---
+
+## 📤 Output Example
+
+- Emotion Log CSV: `outputs/emotion_log.csv`
+- Heatmap and visualizations (auto-generated)
+![Screenshot (11)](https://github.com/user-attachments/assets/3c8f5d52-a224-455c-8c8e-b9eb7ccb10b0)
+![Screenshot (12)](https://github.com/user-attachments/assets/0701af00-3988-4114-a19c-73ce24282765)
+
+---
+
+## ⚙️ Technical Challenges & Solutions
+
+| Challenge                | Solution                            |
+|--------------------------|-------------------------------------|
+| Low-light video input    | Enhanced model tuning, histogram EQ |
+| Model bias               | Diverse datasets like AffectNet     |
+| Large file processing    | Frame sampling, async reading       |
+| Real-time performance    | GPU acceleration, optimized loops   |
+
+---
+
+## 🚀 Future Enhancements
+
+- Live dashboard for public authorities
+- Integration with drone or CCTV footage
+- Real-time riot alert system
+- NLP on protester chants and tweets
+
+---
+
+## 📊 Feasibility Study
+
+| Area         | Feasibility                           |
+|--------------|----------------------------------------|
+| Technical    | Achievable with OpenCV + DeepFace     |
+| Operational  | Deployable with minimal resources      |
+| Economic     | Open-source tools keep costs low       |
+| Legal        | GDPR-compliant with anonymization      |
+| Timeline     | MVP can be built within 1 month        |
+
+---
+
+## 🧠 Built With ❤️ by Team 
+
+- Sona S
+- Vaishnavi S
+- Subhalakshmi C
+- Regi Rufina JD
+
+**Saranathan College of Engineering**
+
+---
+
+## 📬 Contact Us
+
+- subha03062005@gmail.com  
+- sonaskh001@gmail.com  
+- regirufinajd@gmail.com  
+- vaishnavi@gmail.com 
+
+---
+
+# Let's Make Protests Safer with AI-Powered Awareness 🔍
