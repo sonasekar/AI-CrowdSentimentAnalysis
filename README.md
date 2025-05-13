@@ -14,6 +14,9 @@ Governments and organizations often struggle to understand crowd sentiment in re
 
 This system uses **AI-powered video analysis** to detect emotional states in crowds, helping authorities and event organizers make informed, timely decisions.
 
+In addition to video analysis, the system also implements **text-based sentiment analysis** using a dataset of protest-related tweets (`protest_tweets.csv`). This helps provide a **broader, multi-modal understanding of crowd sentiment** by combining visual emotion recognition with **NLP-based tweet sentiment mining**.
+
+
 ### 📌 Phase Implementation:
 - **Phase 1**: Social media or stored video sentiment analysis using NLP and facial emotion recognition.
 - **Phase 2**: Live video feed analysis, with real-time heatmaps and agitation detection.
