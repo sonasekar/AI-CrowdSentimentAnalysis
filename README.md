@@ -17,3 +17,5 @@ This project uses **TextBlob** for sentiment analysis and **Logistic Regression*
 
  ## output
 ![Screenshot (10)](https://github.com/user-attachments/assets/098a27af-a143-4d06-9c8d-6502b79d0aa3)
+![Screenshot (11)](https://github.com/user-attachments/assets/bdab5994-11ac-44c2-bc19-3293610f064d)
+![Screenshot (12)](https://github.com/user-attachments/assets/3ab419e5-b370-45a4-be27-1166cd53ebbb)
