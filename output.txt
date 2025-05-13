@@ -57,63 +57,9 @@ Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 Successfully installed joblib-1.5.0 nltk-3.9.1 pandas-2.2.3 python-dateutil-2.9.0.post0 pytz-2025.2 regex-2024.11.6 scikit-learn-1.6.1 scipy-1.15.3 six-1.17.0 textblob-0.19.0 threadpoolctl-3.6.0 tqdm-4.67.1 tzdata-2025.2
 
-[notice] A new release of pip is available: 24.2 -> 25.1.1
-[notice] To update, run: python.exe -m pip install --upgrade pip
-PS D:\254045\AI-ProtestAnalysis>
-PS D:\254045\AI-ProtestAnalysis> python sentiment_analysis.py
->>
-Traceback (most recent call last):
-  File "D:\254045\AI-ProtestAnalysis\sentiment_analysis.py", line 9, in <module>
-    df = pd.read_csv("protest_tweets.csv")
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'protest_tweets.csv'
-PS D:\254045\AI-ProtestAnalysis> python sentiment_analysis.py
->>
-D:\254045\AI-ProtestAnalysis\sentiment_analysis.py:9: SyntaxWarning: invalid escape sequence '\p'
-  df = pd.read_csv("D:\254045\protest_tweets.csv")
-Traceback (most recent call last):
-  File "D:\254045\AI-ProtestAnalysis\sentiment_analysis.py", line 9, in <module>
-    df = pd.read_csv("D:\254045\protest_tweets.csv")
-D:\254045\AI-ProtestAnalysis\sentiment_analysis.py:1: SyntaxWarning: invalid escape sequence '\p'
-  import pandas as pd
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
-    return _read(filepath_or_buffer, kwds)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 620, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
-    self._engine = self._make_engine(f, self.engine)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
-    self.handles = get_handle(
-                   ^^^^^^^^^^^
-  File "C:\Users\student\AppData\Roaming\Python\Python312\site-packages\pandas\io\common.py", line 873, in get_handle
-    handle = open(
-             ^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'D:¬045\\protest_tweets.csv'
-PS D:\254045\AI-ProtestAnalysis> python sentiment_analysis.py
->>
-D:\254045\AI-ProtestAnalysis\sentiment_analysis.py:9: SyntaxWarning: invalid escape sequence '\p'
-  df = pd.read_csv("D:\protest_tweets.csv")
-C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+
+
 C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
               precision    recall  f1-score   support
 
@@ -127,10 +73,7 @@ weighted avg       0.25      0.50      0.33         2
 New sentence sentiment: Neutral
 PS D:\254045\AI-ProtestAnalysis> python sentiment_analysis.py
 >>
-C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: Und
 C:\Users\student\AppData\Roaming\Python\Python312\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being s  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
      Neutral       0.50      1.00      0.67         1
     Positive       0.00      0.00      0.00         1
@@ -141,37 +84,6 @@ weighted avg       0.25      0.50      0.33         2
 
 New sentence sentiment: Neutral
 PS D:\254045\AI-ProtestAnalysis> git init
-Initialized empty Git repository in D:/254045/AI-ProtestAnalysis/.git/
-PS D:\254045\AI-ProtestAnalysis> git add .
-PS D:\254045\AI-ProtestAnalysis> git commit -m "Initial commit for sentiment analysis of protest data"
-Author identity unknown
-Run
-
-  git config --global user.email "you@example.com"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: unable to auto-detect email address (got 'student@RV-ML5-.(none)')
-PS D:\254045\AI-ProtestAnalysis>  git config --global user.email "sonaskh001@gmail.com"
-PS D:\254045\AI-ProtestAnalysis>  git config --global user.name  "sonasekar"
-[master (root-commit) c994f1b] Initial commit for sentiment analysis of protest data
- 1 file changed, 46 insertions(+)
- create mode 100644 sentiment_analysis.py
-PS D:\254045\AI-ProtestAnalysis> git remote add origin <your-repo-url>
-At line:1 char:23
-+ git remote add origin <your-repo-url>
-+                       ~
-    + FullyQualifiedErrorId : RedirectionNotSupported
- 
-PS D:\254045\AI-ProtestAnalysis> git remote add origin <your-repo-url>
-At line:1 char:23
-+ git remote add origin <your-repo-url>
-+                       ~
-The '<' operator is reserved for future use.
-    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
-    + FullyQualifiedErrorId : RedirectionNotSupported
- 
 info: please complete authentication in your browser...
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
