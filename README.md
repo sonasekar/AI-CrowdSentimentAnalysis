@@ -69,7 +69,8 @@ This system uses **AI-powered video analysis** to detect emotional states in cro
 
 ## 📥 Input Example
 
-Video file placed inside the `data/` folder:
+ProtestVideo2.mp4
+we can add any other protest videos
 
 ---
 
@@ -79,6 +80,7 @@ Video file placed inside the `data/` folder:
 - Heatmap and visualizations (auto-generated)
 ![Screenshot (11)](https://github.com/user-attachments/assets/3c8f5d52-a224-455c-8c8e-b9eb7ccb10b0)
 ![Screenshot (12)](https://github.com/user-attachments/assets/0701af00-3988-4114-a19c-73ce24282765)
+![Screenshot (10)](https://github.com/user-attachments/assets/18436cf4-6684-4e0f-90e5-4a6c6fa6f004)
 
 ---
 
@@ -109,8 +111,6 @@ Video file placed inside the `data/` folder:
 | Technical    | Achievable with OpenCV + DeepFace     |
 | Operational  | Deployable with minimal resources      |
 | Economic     | Open-source tools keep costs low       |
-| Legal        | GDPR-compliant with anonymization      |
-| Timeline     | MVP can be built within 1 month        |
 
 ---
 
